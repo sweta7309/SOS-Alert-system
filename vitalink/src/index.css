@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    /* Danger Red - primary */
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Health Green - secondary */
+    --secondary: 142 71% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 210 40% 96%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 0 72% 51%;
+
+    --radius: 0.75rem;
+
+    /* Emergency colors */
+    --emergency: 0 72% 51%;
+    --emergency-foreground: 0 0% 100%;
+    --danger: 0 72% 51%;
+    --danger-foreground: 0 0% 100%;
+    --health: 142 71% 45%;
+    --health-foreground: 0 0% 100%;
+    --police: 0 72% 51%;
+    --police-foreground: 0 0% 100%;
+    --ambulance: 142 71% 45%;
+    --ambulance-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-emergency: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 84% 40%) 100%);
+    --gradient-health: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 60% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(142 71% 45%) 100%);
+    --gradient-alert: linear-gradient(180deg, hsl(0 72% 51% / 0.1) 0%, hsl(0 72% 51% / 0) 100%);
+
+    /* Shadows */
+    --shadow-emergency: 0 10px 40px -10px hsl(0 72% 51% / 0.3);
+    --shadow-health: 0 10px 40px -10px hsl(142 71% 45% / 0.3);
+    --shadow-elevated: 0 10px 30px -5px hsl(220 20% 10% / 0.1);
+  }
+
+  .dark {
+    --background: 220 20% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 20% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 20% 10%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 0 72% 51%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 142 71% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 16%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 220 14% 16%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 14% 18%;
+    --input: 220 14% 18%;
+    --ring: 0 72% 51%;
+
+    --emergency: 0 72% 51%;
+    --emergency-foreground: 0 0% 100%;
+    --danger: 0 72% 51%;
+    --danger-foreground: 0 0% 100%;
+    --health: 142 71% 45%;
+    --health-foreground: 0 0% 100%;
+    --police: 0 72% 51%;
+    --police-foreground: 0 0% 100%;
+    --ambulance: 142 71% 45%;
+    --ambulance-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+    --success: 142 71% 45%;
+    --success-foreground: 0 0% 100%;
+
+    --gradient-emergency: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(0 84% 40%) 100%);
+    --gradient-health: linear-gradient(135deg, hsl(142 71% 45%) 0%, hsl(142 60% 35%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(0 72% 51%) 0%, hsl(142 71% 45%) 100%);
+    --gradient-alert: linear-gradient(180deg, hsl(0 72% 51% / 0.2) 0%, hsl(0 72% 51% / 0) 100%);
+
+    --shadow-emergency: 0 10px 40px -10px hsl(0 72% 51% / 0.4);
+    --shadow-health: 0 10px 40px -10px hsl(142 71% 45% / 0.4);
+    --shadow-elevated: 0 10px 30px -5px hsl(0 0% 0% / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
